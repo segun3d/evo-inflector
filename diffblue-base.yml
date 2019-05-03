@@ -8,5 +8,54 @@
 # merging a custom yml file on top of this one using the script
 # in dashboard/scripts/update-diffblue-yml. Any options specified here would
 # be overriden to keep consistency with other benchmarks.
+exceptionJson: true
 cbmcArguments:
   java-version: 6
+  java-stub-specified-exceptions-file: 'dependency-exceptions.json' 
+  java-load-class:   
+    - java.io.IOException   
+    - javax.xml.parsers.ParserConfigurationException   
+    - org.xml.sax.SAXException   
+    - java.lang.ClassFormatError   
+    - org.apache.tools.ant.BuildException   
+    - org.junit.experimental.theories.PotentialAssignment$CouldNotGenerateValueException   
+    - java.lang.reflect.InvocationTargetException   
+    - org.junit.internal.runners.FailedBefore  
+    - org.junit.runner.notification.StoppedByUserException   
+    - java.lang.RuntimeException   
+    - org.junit.internal.ArrayComparisonFailure
+    - java.util.NoSuchElementException
+    - java.lang.InterruptedException
+    - java.lang.Exception
+    - java.lang.SecurityException
+    - java.io.FileNotFoundException
+    - org.junit.runners.model.InitializationError
+    - org.junit.runner.FilterFactory$FilterNotCreatedException
+    - java.lang.Throwable
+    - org.junit.runner.manipulation.NoTestsRemainException
+    - java.util.zip.ZipException
+    - javax.xml.transform.TransformerException
+    - java.lang.CloneNotSupportedException
+    - java.net.MalformedURLException
+    - org.apache.tools.ant.taskdefs.ManifestException
+    - org.junit.experimental.max.CouldNotReadCoreException
+    - java.lang.ClassNotFoundException
+    - java.sql.SQLException
+    - java.text.ParseException
+    - org.apache.tools.ant.taskdefs.optional.testing.BuildTimeoutException
+    - javax.xml.xpath.XPathExpressionException
+    - org.apache.tools.zip.UnsupportedZipFeatureException
+    - org.xml.sax.SAXParseException
+    - java.lang.NullPointerException
+    - java.lang.IllegalStateException
+    - org.apache.tools.ant.taskdefs.optional.ejb.IPlanetEjbc$EjbcException
+    - java.lang.IllegalAccessException
+    - java.lang.NoSuchMethodException
+    - java.lang.AssertionError
+    - org.junit.internal.runners.InitializationError
+    - javax.xml.transform.TransformerConfigurationException
+    - java.lang.InstantiationException
+    - java.io.UnsupportedEncodingException
+    - java.lang.IllegalArgumentException
+    - java.lang.NumberFormatException
+    - org.apache.tools.ant.launch.LaunchException
