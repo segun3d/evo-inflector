@@ -7,7 +7,6 @@ cbmcArguments:
   java-max-vla-length: 300000
 skipVerification: good
 key:
-  - string1
   - string2
   - string3
   - string6
