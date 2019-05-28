@@ -3,8 +3,8 @@
 # Do not change any of the values manually to keep options uniform across all benchmarks
 cbmcArguments:
   java-version: 6
-  java-max-vla-length: 200000
-skipVerification: false
+  java-max-vla-length: 300000
+skipVerification: true
 phases:
   - timeout: 150
     cbmcArguments:
