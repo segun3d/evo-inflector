@@ -4,7 +4,7 @@
 cbmcArguments:
   java-version: 6
   java-max-vla-length: 100000
-skipVerification: false
+skipVerification: true
 phases:
   - timeout: 150
     cbmcArguments:
